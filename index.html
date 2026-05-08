@@ -1,1 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Charianne 🤍</title>
 
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Segoe UI',sans-serif;
+background:linear-gradient(135deg,#ff8fab,#ffc2d1);
+height:100vh;
+overflow:hidden;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.container{
+max-width:700px;
+position:relative;
+z-index:2;
+animation:fadeIn 1s ease;
+}
+
+.hidden{
+display:none;
+}
+
+h1{
+font-size:38px;
+margin-bottom:15px;
+}
+
+p{
+font-size:20px;
+line-height:1.8;
+white-space:pre-line;
+}
+
+button{
+margin-top:25px;
+padding:14px 28px;
+border:none;
+border-radius:40px;
+background:white;
+color:#ff4f7b;
+font-size:17px;
+cursor:pointer;
+transition:.3s;
+font-weight:bold;
+}
+
+button:hover{
+transform:scale(1.08);
+}
+
+.heart{
+position:absolute;
+bottom:-20px;
+font-size:20px;
+animation:float 7s linear infinite;
+opacity:.8;
+}
+
+@keyframes float{
+0%{
+transform:translateY(0);
+opacity:0;
+}
+20%{
+opacity:1;
+}
+100%{
+transform:translateY(-110vh);
+opacity:0;
+}
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(15px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.typewriter{
+border-right:2px solid white;
+display:inline;
+animation:blink .8s infinite;
+}
+
+@keyframes blink{
+50%{
+border-color:transparent;
+}
+}
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop>
+<source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=romantic-background-112198.mp3" type="audio/mp3">
+</audio>
+
+<div class="container">
+
+<div id="s1">
+<h1>Hey Charianne 😌🤍</h1>
+<p>
+I made something for you...
+
+So please read slowly okay?
+No skipping 😤
+</p>
+
+<button onclick="next(2)">Okay fine 😏</button>
+</div>
+
+<div id="s2" class="hidden">
+<h1>Before we continue 👀</h1>
+<p>
+DISCLAIMER:
+Long message ahead 😤❤️
+
+But I promise...
+every word here is genuine.
+</p>
+
+<button onclick="next(3)">Continue 💌</button>
+</div>
+
+<div id="s3" class="hidden">
+<h1>One important question 😌</h1>
+
+<p>
+Do you know how much I adore you?
+</p>
+
+<button onclick="next(4)">Maybe 🤍</button>
+<button onclick="next(4)">A lot 😏</button>
+</div>
+
+<div id="s4" class="hidden">
+<h1>Okay... deep breath first 🥺</h1>
+
+<p>
+Because someone out there...
+
+spent hours thinking about you today 🤍
+</p>
+
+<button onclick="next(5)">Read message 💌</button>
+</div>
+
+<div id="s5" class="hidden">
+<h1>A Little Piece of My Heart 💌</h1>
+
+<p id="message"></p>
+
+<button id="finalBtn" class="hidden" onclick="next(6)">
+One last thing 😳
+</button>
+</div>
+
+<div id="s6" class="hidden">
+<h1>Happy Birthday, My Love 🤍</h1>
+
+<p>
+No matter how many birthdays pass...
+
+I hope I’ll still be one of the reasons
+you smile like this 😌🤍
+</p>
+
+<button onclick="alert('Now message me because I miss you already 😒🤍')">
+Message me 😏
+</button>
+</div>
+
+</div>
+
+<script>
+
+function next(step){
+for(let i=1;i<=6;i++){
+document.getElementById('s'+i).style.display='none';
+}
+
+document.getElementById('s'+step).style.display='block';
+
+if(step===5){
+typeMessage();
+}
+}
+
+const text = `Hi, Charianneeeeeee! 🤍
+
+“I hope this will be the last time I’ll call you by your name...
+
+kayyyy I want to call you ‘mine’ instead hahah.
+
+Or maybe ‘love,’ since you’ve become the love of my life naman na 🫣😁
+
+Kidding aside hahhaha,
+but yahhh...
+
+in God’s perfect time heheh,
+no pressure 😉”
+
+Note:
+Start and end quote kay that was actually the original message I made weeks before heheh.
+
+And as of April 24, 2025 at exactly 12:46 AM...
+
+you called me your “love.”
+
+And honestly?
+
+I was left speechless.
+
+Mixed emotions kaayo ko ato po,
+but super glad and happy because those were the words I’ve always wanted to hear from you 🤍
+
+Anywayssss...
+
+Happiest birthday to you po 🥺🤍
+
+Cliché na siguro paminawon,
+but thank you for existing,
+and thank God for bringing you into my life.
+
+You’ve become the most important person in my life now,
+and I genuinely can’t imagine what life would be like if you never came into it.
+
+Like...
+reallyyy.
+
+I mean it po.
+
+Sometimes I still think about how we started because even now,
+waray ghapon ko katuo that we’ve come this far.
+
+I met you at such an unexpected time,
+and I never thought I’d find a connection this genuine so suddenly.
+
+But somehow...
+it felt natural.
+
+Easy.
+Right.
+
+It honestly feels like we were meant to find each other po heheh 🤍
+
+You became my favorite notification,
+my number one supporter,
+the person I can always yap to,
+and my special favorite person 😌
+
+And even though we still haven’t seen each other in person yet...
+
+I already feel the connection.
+
+Like promiseeee heheh.
+
+I really love how you understand me even in the smallest things.
+
+Kanang dili na nako need i-explain akong self too much because somehow...
+
+you just get me.
+
+You make my days better without even trying.
+
+Maka tan-aw rako nimo...
+okay nako.
+Happy nako 😏🤍
+
+Talking to you feels so easy and natural,
+and I’m always excited every time we talk.
+
+You give me peace.
+You give me comfort.
+You make me feel safe and secure.
+
+And honestly...
+
+it hits different.
+
+I like you so much,
+and I’m loving you genuinely 🤍
+
+I hope our story won’t just become another lesson someday,
+but something that stays...
+
+something real...
+
+something lasting.
+
+I’m truly thankful that I met you.
+
+So please...
+
+stay strong always, okay?
+
+I’ll always be here for you no matter what happens.
+I’ll stay by your side.
+
+We still have a future to hold onto...
+
+so let’s make it happen together, okay? 😌🤍
+
+I can’t wait to finally see you,
+hold you,
+and spend time with you.
+
+I’m always looking forward to that day 🥺
+
+Thank you for making my life happier.
+
+And once again...
+
+Happiest birthday, my love 🫶🤍`;
+
+let i = 0;
+
+function typeMessage(){
+
+const msg = document.getElementById("message");
+const btn = document.getElementById("finalBtn");
+
+msg.innerHTML="";
+i=0;
+
+function typing(){
+
+if(i < text.length){
+
+msg.innerHTML += text.charAt(i);
+
+i++;
+
+setTimeout(typing,22);
+
+}else{
+btn.classList.remove("hidden");
+}
+
+}
+
+typing();
+}
+
+setInterval(()=>{
+
+const heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="🤍";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=(Math.random()*20+15)+"px";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},7000);
+
+},400);
+
+</script>
+
+</body>
+</html>
